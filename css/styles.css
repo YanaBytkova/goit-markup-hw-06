@@ -525,8 +525,7 @@ img {
   line-height: 1.5;
 }
 
-.soc-media,
-.subscribe-form-tittle {
+.soc-media {
   color: var(--brand-color1);
   margin-bottom: 16px;
   font-weight: var(--brand-font-weight2);
@@ -551,10 +550,22 @@ img {
   background-color: var(--icon-hover2);
 }
 
-.subscribe-form {
+.subscribe-container {
+  display: block;
   padding-left: 80px;
 }
 
+.subscribe-form {
+  position: relative;
+}
+
+.subscribe-form-tittle {
+  color: var(--brand-color1);
+  margin-bottom: 16px;
+  font-weight: var(--brand-font-weight2);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
 .subscribe-form-container {
   display: flex;
   flex-direction: row;
@@ -580,7 +591,6 @@ img {
 }
 
 .subscribe-button {
-  position: relative;
   background-color: var(--brand-color2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -603,12 +613,14 @@ img {
 
 .sub-button-name {
   position: absolute;
+  top: 10px;
+  left: 320px;
   display: flex;
   flex-direction: row;
-  margin-left: 8px;
+  justify-content: flex-end;
+  padding: 0;
   gap: 16px;
-  top: 50%;
-  transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .sub-button-name-subscribe {
